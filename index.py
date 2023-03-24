@@ -7,7 +7,7 @@ import plotly.express as px
 from app import *
 
 #Importando os componentes da pasta 'components'
-from components import sidebar, dashboards, extratos
+from components import sidebar, dashboards, extracts
 
 # ========== INÍCIO LAYOUT ========== #
 
@@ -25,10 +25,10 @@ app.layout = dbc.Container(children=[
 
 def render_page(pathname):
     if pathname == '/' or pathname == '/dashboards':
-        return dashboards.layouts
+        return dashboards.layout
     
     if pathname == '/extratos':
-        return extratos.layout
+        return extracts.layout
 
 if __name__ == '__main__':
     app.run_server(port=9090, debug=True)
