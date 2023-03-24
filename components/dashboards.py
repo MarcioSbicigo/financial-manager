@@ -13,5 +13,5 @@ from app import app
 # ========== INÍCIO LAYOUT ========== #
 
 layout = dbc.Col([
-       
+       html.H5('Dashboard')
     ])
